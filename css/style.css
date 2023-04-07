@@ -17,41 +17,45 @@ h1 {
 
 .p1 {
     font-size:3vw;
-    padding-left: 20px;
-    margin-bottom: 5px;
+    text-align:center;
+    margin:auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .p2 {
     font-size:3vw;
-    padding-left: 20px;
-    margin-bottom: 5px;
-    clear: both;
+    margin:auto;
+    text-align:center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-    .img1{
+.block1{
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    justify-content: center;
+    margin:auto;
+}
+.block2{
+    display: flex;
+    flex-direction: row;
+}
+.img1{
         padding: 20px;
         height:400px;
         width: 40%;
-        margin-left: 55%;
-        margin-top:20px;
-        margin-bottom:20px;
-        background:linear-gradient(to bottom, #052565, #67b1dc,#03437b); 
-
-        }
-
+        margin:auto;
+        background:linear-gradient(to bottom, #052565, #67b1dc,#03437b);  
+}
 .div1 {
-    float: left;
     background: linear-gradient(to right, #eff1ed, #c199b7);
     color: rgb(3, 2, 17);
     font-family: "Times new roman", Times, serif;   
-    margin-top: 20px;
-    margin-bottom:20px;
-    font-size: 1.4vw;
+    margin:auto;
+    font-size: 1.5vw;
     color:black;
     padding: 20px;
+    padding-bottom:100px;
     height: 400px;
     width: 40%;
     clear: both;
@@ -60,26 +64,23 @@ h1 {
 
 .img2 {
     float: left;
-    border: 5px solid rgb(214, 168, 201);
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:auto;
     padding: 10px;
     width: 40%;
     height: 300px;
     overflow: hidden;
     clear: both;
-    }
+}
 
 .div2 {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     background: linear-gradient(to left, #ecf1ec, #c292ba);
     width:40%;
     height: 300px;
     padding: 10px;
+    padding-bottom:70px;
     margin-left: 55%;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin:auto;
     overflow: hidden;
   
 }
@@ -91,7 +92,8 @@ h1 {
         font-size: 2vw;
         padding-top:5px;
         word-spacing: 15px;
-        margin-top:80px; }  
+        margin-top:80px; 
+}  
 
 
 
@@ -107,18 +109,23 @@ h1 {
 .fa {
     
     text-decoration: none;
-    margin: 5px 2px;}
+    margin: 5px 2px;
+}
 
 
 .fa-linkedin {
     background: #007bb5;
-    color: white;}
+    color: white;
+}
 
 
 .fa-instagram {
     background: #f610bc;
-    color: white;}
-
+    color: white;
+}
+.intro{
+    font-size:0.9rem;
+}
 
 /* .fa-github { */
     /* background: #f00606; */
@@ -126,83 +133,101 @@ h1 {
 
 
 
-@media screen and (max-width:600px) {
-    p1 {
-        font-size:2.5vw;
-        padding-left: 10px;
-        margin-bottom: 2px;
+@media only screen and (max-width:800px) {
+    .p1 {
+    
+        font-size:1rem;
         font-family: Arial, Helvetica, sans-serif;
     }
+    .intro{
+        font-size:0.95rem;
+    }
     .p2 {
-        font-size:2.5vw;
-        padding-left: 10px;
-        margin-bottom: 2px;
+        font-size:1rem;
         clear: both;
         font-family: Arial, Helvetica, sans-serif;
     }
     .img1{
+        align-self: center;
         padding: 3px;
-        height:200px;
-        width: 40%;
-        margin-left: 55%;
-        margin-top:5px;
-        margin-bottom:5px;
+        height:400px;
+        width: 300px;
+        margin:auto 10px;
+        /* float:left; */
         background:linear-gradient(to bottom, #052565, #67b1dc,#03437b); 
+        
 
+    }
+    .div1 {
+        align-self: center;
+        /* float: left; */
+        background: linear-gradient(to right, #eff1ed, #c199b7);
+        color: rgb(3, 2, 17);
+        font-family: "Times new roman", Times, serif;   
+        font-size: 1rem;
+        color:black;
+        height: 200px;
+        width: 100%;
+        margin:auto 10px;
+        clear: both;
+    }
+    .block1{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+    }
+    .block2{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+    }
+    .img2 {
+        /* float: left; */
+        width: 100%;
+        margin:auto 10px;
+        height: 150px;
+        overflow: hidden;
+        align-self: center;
+        padding: 3px;
+    }
+    .div2 {
+        font-size: 0.9rem;
+        background: linear-gradient(to left, #ecf1ec, #c292ba);
+        width:100%;
+        margin:auto 10px;
+        /* float:left; */
+        height: 150px;
+        overflow: hidden;
+        align-self: center;
+        text-align: center;
+    }
+    .div3 {
+        clear: both;
+        margin: auto;
+        text-align: center;
+        font-size: 5vw;
+        word-spacing: 15px;
+        align-self: center;
+    }
+    .pic1{
+        height:250 px;
+        width:250 px;
+        margin:auto;
+        align-self: center;
+    }
+    .pic2{
+        height:250px;
+        width:250px;
+        margin:auto;
+        align-self: baseline;
+    }
+    
+    
+    
+    
+
+
+
+    
+    
 }
-.div1 {
-    float: left;
-    background: linear-gradient(to right, #eff1ed, #c199b7);
-    color: rgb(3, 2, 17);
-    font-family: "Times new roman", Times, serif;   
-    margin-top: 5px;
-    margin-bottom:5px;
-    font-size: 1.4vw;
-    color:black;
-    padding: 3px;
-    height: 200px;
-    width: 40%;
-    clear: both;
-
-}
-.img2 {
-    float: left;
-    border: 5px solid rgb(214, 168, 201);
-    float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    width: 40%;
-    height: 150px;
-    overflow: hidden;
-    clear: both;
-}
-.div2 {
-    font-size: 1.4vw;
-    background: linear-gradient(to left, #ecf1ec, #c292ba);
-    width:40%;
-    height: 150px;
-    padding: 5px;
-    margin-left: 55%;
-    margin-top:5px;
-    margin-bottom:5px;
-    overflow: hidden;
-  
-}
-.div3 {
-    clear: both;
-    margin: auto;
-    text-align: center;
-    font-size: 2vw;
-    padding-top:5px;
-    word-spacing: 15px;
-    margin-top:80px; }
-    
-    
-    
-    
-
-
-
-    
-}    
