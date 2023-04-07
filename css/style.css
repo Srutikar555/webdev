@@ -150,7 +150,7 @@ h1 {
     .img1{
         align-self: center;
         padding: 3px;
-        height:400px;
+        height:350px;
         width: 300px;
         margin:auto 10px;
         /* float:left; */
@@ -164,7 +164,7 @@ h1 {
         background: linear-gradient(to right, #eff1ed, #c199b7);
         color: rgb(3, 2, 17);
         font-family: "Times new roman", Times, serif;   
-        font-size: 1rem;
+        font-size: 0.7rem;
         color:black;
         height: 200px;
         width: 100%;
@@ -191,7 +191,7 @@ h1 {
         padding: 3px;
     }
     .div2 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         background: linear-gradient(to left, #ecf1ec, #c292ba);
         width:100%;
         margin:auto 10px;
